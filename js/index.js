@@ -71,6 +71,7 @@ function createEle() {
     countriesItem.setAttribute('onclick','moreDetail(this)');
     flag.classList.add('flag');
     flagImage.classList.add('flag-image');
+    flagImage.setAttribute('alt','flag-country-image');
     info.classList.add('info');
     name.classList.add('name');
     population.classList.add('population');
@@ -149,7 +150,7 @@ function moreDetail(n) {
         var innerText = $('#slider-detail span');
         // For string data
         for (let i = 0 ; i < innerText.length; i++) {
-            var nameProper = innerText[i].getAttribute('name');
+            var nameProper = innerText[i].getAttribute('data-value');
             innerText[i].innerHTML = currentObject[nameProper];
             // For array data
             if (nameProper === "currencies") {
