@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <title>Rest Countries API</title>
+</head>
+<body>
+    <nav id="nav">
+        <div id="nav-container">
+            <div id="logo"><a href="">Where in the world?</a></div>
+            <div id="switch">
+                <input type="checkbox" name="toggle Theme" id="toggle-mode">
+                <span class="material-icons" id="dark-icon">brightness_2</span>
+                <span class="material-icons" id="light-icon">wb_sunny</span>
+                <label for="toggle-mode" class="toggle-mode">
+                    <span id="dark-text">Dark Mode</span>
+                    <span id="light-text">Light Mode</span>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <main id="main">
+        <div id="main-container">
+            <div id="input-container">
+                <div id="search-container">
+                    <label for="searchbar" class="searchbar">
+                        <span class="material-icons">search</span>
+                        <input type="text" name="search" id="searchbar" autocomplete="off" placeholder="Search for a country...">
+                    </label>
+                </div>
+                <div id="filter-container">
+                    <div id="selected">
+                        <p>Filter by Region</p>
+                        <span class="material-icons">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                    <div id="unselect">
+                        <div>All</div>
+                        <div>Africa</div>
+                        <div>Americas</div>
+                        <div>Asia</div>
+                        <div>Europe</div>
+                        <div>Oceania</div>
+                    </div>
+                </div>
+            </div>
+            <div id="countries-list">
+            </div>
+        </div>
+        <div id="slider">
+            <div id="slider-container">
+                <div id="slider-btn">
+                    <span class="material-icons">keyboard_backspace</span>
+                    <span>Back</span>
+                </div>
+                <div id=slider-content>
+                    <div id="slider-flag">
+                        <img src="" alt="detail image">
+                    </div>
+                    <div id="slider-text">
+                        <h1 id="slider-name">Belgium</h1>
+                        <div id="slider-detail">
+                            <p>Native Name: <span id="slider-native-name" name="nativeName">Bel..</span></p>
+                            <p>Top Level Domain: <span id="slider-top-domain" name="topLevelDomain">Bel..</span></p>
+                            <p>Population: <span id="slider-population" name="population">Bel..</span></p>
+                            <p>Currencies: <span id="slider-currencies" name="currencies">Bel..</span></p>
+                            <p>Region: <span id="slider-region" name="region">Bel..</span></p>
+                            <p>Languages: <span id="slider-language" name="languages">Bel..</span></p>
+                            <p>Sub Region: <span id="slider-sub" name="subregion">Bel..</span></p>
+                            <p></p>
+                            <p>Capital: <span id="slider-capital" name="capital">Bel..</span></p>
+                        </div>
+                        <div id="slider-geography">
+                            <span id="slider-geography-title">Border Countries:</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
